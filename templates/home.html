@@ -11,16 +11,25 @@
         height: 260px;
         width: 100%;
         object-fit: cover;
+        margin-bottom: 16px
       }
     </style>
 
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src="https://career-website-jj--nteffalain.repl.co/static/careerpic.jpg">
     <div class="container">
       <h1 class="text-center mt-2 mb-4">Career Page</h1>
-      <img class="img-fluid" id="banner" src="https://career-website-jj--nteffalain.repl.co/static/careerpic.jpg">
-      <h2 class="text-center mt-4 mb-3">About Careers</h2>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Molestie nunc non blandit massa enim nec dui nunc mattis. Blandit libero volutpat sed cras.</p>
+
+      <div class="row" style="margin-bottom:16px;">
+        <div class="col-6">
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Molestie nunc non blandit massa enim nec dui nunc mattis. Blandit libero volutpat sed cras.</p>
+          </div>
+        <div class="d-none d-md-block col-md-6">
+          <img src="/static/people.jpg" style="height:280px; border-radius:4px;">
+        </div>
+      </div>
       <h2 class="text-center mb-3">Job Openings</h2>
       <p>
         <div>
@@ -30,10 +39,11 @@
         </div>
       </p>
       <div style="text-align: center;">
-        <button type="button" class="btn btn-danger btn-lg mt-4">Contact Us</button>
-        <p class="mt-4">Copyright 2023, Career Inc</p>
+        <a type="button" class="btn btn-danger btn-lg mt-4" href="mailto:nteffal@gmail.com?subject=Questions%20on%20Jobs&body=How%20can%20we%20help%20you%20today%3F%0D%0A%0D%0A">Contact Us</a>
+        
       </div>
     </div>
+    {% include 'footer.html' %}
   </body>
   
 </html>
