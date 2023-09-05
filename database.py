@@ -24,7 +24,7 @@ def load_jobs_from_db():
 
 
 def load_job_from_db(id):
-  if not id
+  if not id:
     return None
   
   with engine.connect() as conn:
