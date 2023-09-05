@@ -33,7 +33,7 @@ def load_job_from_db(id):
       val=id
     )
     
-    rows = result.fetchone()
+    row = result.fetchone()
     if row is None:
       return None
 
